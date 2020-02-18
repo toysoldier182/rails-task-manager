@@ -1,0 +1,11 @@
+<h1>All tasks</h1>
+<ol>
+  <% @tasks.each do |task| %>
+  <li>
+    <%= check_box_tag disabled: "#{task.completed}" %>
+    <%= task.title %>
+  </li>
+  <% end %>
+</ol>
+
+
